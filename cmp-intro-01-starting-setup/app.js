@@ -21,7 +21,7 @@ const app = Vue.createApp({
 
 app.component('friend-contact', {
   template: `
-    <li :key="friend.id">
+    <li>
         <h2>{{friend.name}}</h2>
         <button @click="toggleDetails">
             {{ detailsAreVisible ? 'Hide' : 'Show'}} Details
